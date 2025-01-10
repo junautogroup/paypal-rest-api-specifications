@@ -1,4 +1,14 @@
-# PayPal REST API Specifications
+let fundingSource
+
+paypal.Buttons({
+  onClick: (data) => {
+    // fundingSource = "venmo"
+    fundingSource = data.fundingSource
+
+    // Use this value to determine what funding source was used to pay
+    // Update your confirmation pages and notifications from "PayPal" to "Venmo"
+  },
+})data.fundingSource# PayPal REST API Specifications
 
 This repository contains the specification files for [PayPal REST APIs](https://developer.paypal.com/api/rest/).
 
